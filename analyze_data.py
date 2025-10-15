@@ -6,7 +6,7 @@ import json
 
 
 
-tf_record = "/Users/Brennan/Downloads/CSE5835_FinalProj/one_record.tfrecord"
+tf_record = "/Users/Brennan/Downloads/GNN_Sand_particle_simulation/one_record.tfrecord"
 
 # not sure what this stuff does but it works
 # taken from paper
@@ -102,7 +102,7 @@ def _read_metadata(data_path):
     with open(data_path, 'rt') as fp:
         return json.loads(fp.read())
 
-meta_file = "/Users/Brennan/Downloads/CSE5835_FinalProj/metadata.json"
+meta_file = "/Users/Brennan/Downloads/GNN_Sand_particle_simulation/metadata.json"
 metadata = _read_metadata(meta_file)
 
 # Create a tf.data.Dataset from the TFRecord.

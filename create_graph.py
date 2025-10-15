@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from torch_geometric.utils import to_networkx
 
-file_path = "/Users/Brennan/Downloads/CSE5835_FinalProj/position_tensor_train.pt"
+file_path = "/Users/Brennan/Downloads/GNN_Sand_particle_simulation/position_tensor_train.pt"
 
 pos_data = torch.load(file_path)
 pos_data = pos_data[0]
 
-file_path_2 = "/Users/Brennan/Downloads/CSE5835_FinalProj/velocity_tensor_train.pt"
+file_path_2 = "/Users/Brennan/Downloads/GNN_Sand_particle_simulation/velocity_tensor_train.pt"
 
 vel_data = torch.load(file_path_2)
 vel_data = vel_data[:, :, :2]
